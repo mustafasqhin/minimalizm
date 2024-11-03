@@ -1,0 +1,29 @@
+<!-- views/index.ejs -->
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Minimalist Site</title>
+    <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Minimalist Blog Sitesi</h1>
+        <p>Bu site Google AdSense ile entegre edilmiştir ve sade bir tasarıma sahiptir.</p>
+
+        <!-- Google AdSense Reklam Alanı -->
+        <div class="adsense">
+            <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+            <ins class="adsbygoogle"
+                 style="display:block"
+                 data-ad-client="<%= adsenseClientId %>"
+                 data-ad-slot="<%= adsenseSlotId %>"
+                 data-ad-format="auto"></ins>
+            <script>
+                 (adsbygoogle = window.adsbygoogle || []).push({});
+            </script>
+        </div>
+    </div>
+</body>
+</html>
